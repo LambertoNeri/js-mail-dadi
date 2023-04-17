@@ -18,13 +18,19 @@ btn.addEventListener('click',
 
 
         if (computer > player) {
-        console.log ("Hai perso il pc ha fatto", computer, "tu", player)
+            console.log ("HAI PERSO!!!! il PC ha fatto:", computer, "TU:", player);
+            document.getElementById("risultato").innerHTML = ("HAI PERSO!!!! il PC ha fatto:", computer, "TU:", player);
         }
 
         else if (player > computer){
-        console.log ("HAI VINTO!!! Tu hai fatto", player, "il pc invece", computer)
-        } else {
-        console.log ("PAREGGIO")
+        console.log ("HAI VINTO!!!! TU hai fatto:", player, "il PC:", computer);
+        document.getElementById("risultato").innerHTML = ("HAI VINTO!!!! TU hai fatto:", player, "il PC:", computer);
         }
+        
+        else {
+            document.getElementById("risultato").innerHTML = ("PAREGGIO");
+        }
+
+      
     });
 
