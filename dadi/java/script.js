@@ -19,12 +19,12 @@ btn.addEventListener('click',
 
         if (computer > player) {
             console.log ("HAI PERSO!!!! il PC ha fatto:", computer, "TU:", player);
-            document.getElementById("risultato").innerHTML = ("HAI PERSO!!!! il PC ha fatto:", computer, "TU:", player);
+            document.getElementById("risultato").innerHTML = (`HAI PERSO!!!! Il PC ha fatto: ${computer}. TU hai fatto: ${player}.`);
         }
 
         else if (player > computer){
         console.log ("HAI VINTO!!!! TU hai fatto:", player, "il PC:", computer);
-        document.getElementById("risultato").innerHTML = ("HAI VINTO!!!! TU hai fatto:", player, "il PC:", computer);
+        document.getElementById("risultato").innerHTML = (`HAI VINTO!!!! TU hai fatto: ${player}. Il PC ha fatto: ${computer}.`);
         }
         
         else {
@@ -34,3 +34,4 @@ btn.addEventListener('click',
       
     });
 
+   
